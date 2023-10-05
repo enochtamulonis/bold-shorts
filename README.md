@@ -1,25 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to setup and run app locally. ps very easy
 
-Things you may want to cover:
+* ruby 3.1.4
 
-* Ruby version
+* Rails 7.0.8
 
-* System dependencies
+# Install steps
 
-* Configuration
+- clone the repo
+- run `bundle install`
+- run `rails db:create` 
 
-* Database creation
+# Start server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# bold-shorts
+`bin/dev`

@@ -1,0 +1,21 @@
+<div class="h-[100vh]" data-controller="recording">
+  <div data-recording-target="start" data-action="click->recording#start" class="flex flex-col items-center justify-center cursor-pointer p-16 w-full h-full">
+    <div class="w-24">
+      <%= render Icons::MicrophoneComponent.new %>
+    </div>
+    <p class="text-gray-200 text-lg"> Click to start your short </p>
+  </div>
+
+  <div data-recording-target="stop" class="hidden flex flex-col items-center justify-center cursor-pointer p-16 w-full h-full" data-action="click->recording#stop">
+    <div class="w-24 animate-pulse text-red-500 mb-4">
+      <%= render Icons::MicrophoneComponent.new %>
+    </div>
+  </div>
+</div>
+
+<audio controls="true" id="audioPlayer"></audio>
+
+<div class="px-4 mt-16">
+  <%= link_to "Sign out", destroy_user_session_path, class: "bg-gray-500 text-gray-100 p-2 rounded-lg", data: { turbo_method: :delete } %>
+</div>
+

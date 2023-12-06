@@ -15,3 +15,4 @@ How to setup and run app locally. ps very easy
 # Start server
 
 `bin/dev`
+# bold-shorts-2

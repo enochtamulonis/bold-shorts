@@ -1,0 +1,11 @@
+<div class="max-w-5xl w-full mx-auto mt-8">
+  <%= form_with model: @short do |f| %>
+    <%= f.label :text %>
+    <%= f.text_area :text, class: "block bg-blue-700 text-blue-50 w-full" %>
+    <br/>
+    <%= f.label :duration, "Duration (seconds)" %>
+    <%= f.number_field :duration, class: "block bg-blue-700 text-blue-50" %>
+    <br/>
+    <%= f.submit class: "bg-blue-300 text-blue-900 p-2 cursor-pointer hover:bg-blue-400" %>
+  <% end %>
+</div>
